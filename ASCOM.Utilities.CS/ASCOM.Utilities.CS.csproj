@@ -52,8 +52,15 @@
     <Compile Include="GlobalConstants.cs" />
     <Compile Include="Interfaces.cs" />
     <Compile Include="KeyValuePair.cs" />
+    <Compile Include="Profile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistryAccess.cs" />
+    <Compile Include="Serial.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="TraceLogger.cs" />
     <Compile Include="Util.cs" />
+    <Compile Include="UtilitiesSettings.cs" />
+    <Compile Include="XMLAccess.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ASCOM.Utilities\ASCOM.Newtonsoft.Json\ASCOM.Newtonsoft.Json.csproj">
@@ -70,6 +77,11 @@
       <Link>ASCOM.snk</Link>
     </None>
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NamespaceDocumentation.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
