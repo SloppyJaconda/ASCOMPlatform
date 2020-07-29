@@ -41,9 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllUsersFileSystemProvider.cs" />
+    <Compile Include="ASCOMProfile.cs" />
+    <Compile Include="Chooser.cs" />
+    <Compile Include="ChooserCustomToolStripRenderer.cs" />
+    <Compile Include="ChooserItem.cs" />
+    <Compile Include="Enums.cs" />
     <Compile Include="Exceptions.cs" />
+    <Compile Include="GlobalCode.cs" />
+    <Compile Include="GlobalConstants.cs" />
     <Compile Include="Interfaces.cs" />
+    <Compile Include="KeyValuePair.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ASCOM.Utilities\ASCOM.Newtonsoft.Json\ASCOM.Newtonsoft.Json.csproj">
@@ -54,6 +64,12 @@
       <Project>{5f6cf410-7b16-4a32-99d2-0d92196c4490}</Project>
       <Name>ASCOM.Exceptions</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ASCOM.snk">
+      <Link>ASCOM.snk</Link>
+    </None>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

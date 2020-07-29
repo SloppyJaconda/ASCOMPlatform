@@ -15,11 +15,11 @@ using Microsoft.VisualBasic;
 using System.Runtime.InteropServices;
 using System.ComponentModel;
 using ASCOM.Utilities;
-using ASCOM.Utilities.Enums;
+using ASCOM.Utilities.CS;
 using System.Net;
 using System.Collections;
 
-namespace Interfaces
+namespace ASCOM.Utilities.CS.Interfaces
 {
 
 
